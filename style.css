@@ -1,0 +1,56 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .piano {
+            display: flex;
+            position: relative;
+        }
+
+        .white-key {
+            width: 50px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        .white-key.active {
+            background-color: #e0e0e0;
+        }
+
+        .black-key {
+            width: 30px;
+            height: 120px;
+            background-color: black;
+            border-radius: 0 0 5px 5px;
+            position: absolute;
+            z-index: 2;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            color: white;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        .black-key.active {
+            background-color: #333;
+        }
